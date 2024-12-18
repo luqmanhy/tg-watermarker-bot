@@ -16,7 +16,7 @@ Protect sensitive images with watermarks
 </p>
 
 <p align="center">
-<a href="https://github.com/luqmanhy/tg-watermarker-bot"><img src="/static/watermarker-demo.jpeg" alt="Watermarker Demo"></a>
+<a href="https://github.com/luqmanhy/tg-watermarker-bot"><img src="/static/watermarker-demo.png" alt="Watermarker Demo"></a>
 </p>
 
 ---
