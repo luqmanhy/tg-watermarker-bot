@@ -131,9 +131,9 @@ Users can customize the following settings:
 ## Credits
 ### Contributing
 
-We welcome contributions! Feel free to submit [Pull Requests](https://github.com/luqmanhy/tgwatermarker/pulls) or report [Issues](https://github.com/luqmanhy/tgwatermarker/issues).
+We welcome contributions! Feel free to submit [Pull Requests](https://github.com/luqmanhy/tg-watermarker-bot/pulls) or report [Issues](https://github.com/luqmanhy/tg-watermarker-bot/issues).
 
 ### Licensing
 
-This utility is licensed under the [MIT license](https://opensource.org/license/mit). You are free to use, modify, and distribute it, as long as you follow the terms of the license. You can find the full license text in the repository - [Full MIT license text](https://github.com/luqmanhy/tgwatermarker/blob/master/LICENSE).
+This utility is licensed under the [MIT license](https://opensource.org/license/mit). You are free to use, modify, and distribute it, as long as you follow the terms of the license. You can find the full license text in the repository - [Full MIT license text](https://github.com/luqmanhy/tg-watermarker-bot/blob/master/LICENSE).
 
