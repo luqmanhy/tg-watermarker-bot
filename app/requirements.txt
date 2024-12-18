@@ -1,6 +1,4 @@
 requests
-colorama
 Flask
 python-dotenv
 pillow
-python-telegram-bot
