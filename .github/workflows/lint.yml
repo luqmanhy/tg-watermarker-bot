@@ -1,0 +1,33 @@
+name: 💅 Lint
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lint:
+    name: Lint Python Code
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install flake8
+        run: |
+          python -m pip install --upgrade pip
+          pip install flake8
+
+      - name: Run flake8 linter
+        run: |
+          flake8 . --ignore=E302,W291,E128,E722,F841,E501,W293,E305,E126,E123 --max-line-length=120
+
