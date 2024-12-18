@@ -9,7 +9,7 @@ on:
 
 jobs:
     push:
-        name:  DockerHub Push
+        name: DockerHub Push
         runs-on: ubuntu-latest
         permissions:
             packages: write
@@ -25,11 +25,12 @@ jobs:
                 name: Get Github tag
                 id: meta
                 run: |
-                    curl --silent "https://api.github.com/repos/luqmanhy/tg-watermarker-bot/releases/latest" | jq -r .tag_name | xargs -I {} echo TAG={} >> $GITHUB_OUTPUT
+                    TAG=$(git describe --tags --abbrev=0)
+                    echo "TAG=${TAG}" >> $GITHUB_OUTPUT
 
             -
                 name: Log in to Docker Hub
-                uses: docker/login-action@v3 
+                uses: docker/login-action@v3
                 with:
                     username: ${{ secrets.DOCKERHUB_USERNAME }}
                     password: ${{ secrets.DOCKERHUB_TOKEN }}
@@ -41,4 +42,6 @@ jobs:
                     context: .
                     file: ./Dockerfile
                     push: true
-                    tags: luqmanhy/tg-watermarker-bot:latest,luqmanhy/tg-watermarker-bot:${{ steps.meta.outputs.TAG }}
+                    tags: |
+                        luqmanhy/tg-watermarker-bot:latest
+                        luqmanhy/tg-watermarker-bot:${{ steps.meta.outputs.TAG }}
