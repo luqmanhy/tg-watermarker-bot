@@ -10,7 +10,7 @@ Protect sensitive images with watermarks
 
 <p align="center">
   <a href="#features">Features</a> •
-  <a href="#installation">Installation</a> •
+  <a href="#deployment">Deployment</a> •
   <a href="#usage">Usage</a> •
   <a href="#credits">Credits</a> 
 </p>
@@ -24,7 +24,7 @@ Protect sensitive images with watermarks
 ## Overview
 A Telegram bot that helps protect sensitive images by adding customizable watermarks. It ensures that your sensitive images remain confidential and secure from unauthorized use, making it an ideal tool for safeguarding your images.
 
-## Key Features
+## Features
 - Customizable: Offers flexible customization options for text size, opacity, and designs to suit your preferences.
 - Watermarking: Automatically adds a watermark to images based on the user's configuration.
 - Delete Original Photos: Automatically delete the original images after watermarking.
