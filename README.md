@@ -46,7 +46,7 @@ A Telegram bot that helps protect sensitive images by adding customizable waterm
 4. Click <b>Connect</b>
 5. Configure the service:
   - Add an environment variable:
-    - <b>Key:</b> TELEGRAM_API_KEY
+    - <b>Key:</b> TELEGRAM_TOKEN
     - <b>Value:</b> Your Telegram Bot Token from BotFather.
 6. Click <b>Deploy Web Service</b> to deploy
 
